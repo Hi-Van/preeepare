@@ -46,3 +46,45 @@ h2 {
   font-size: 2.5vh;
   color: #4d575c;
 }
+
+.chart-opt {
+  margin-top: 30vh;
+}
+
+.btn-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6vh;
+}
+
+.btn-chart {
+  margin: 4vh;
+  padding: 15px 40px 15px 40px;
+  background-color: #f57175;
+  font-size: 2vh;
+  font-weight: 600;
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.btn-chart:hover {
+  background-color: #ff7a7e;
+}
+
+.horizontal-wrapper {
+  display: block;
+  margin: auto;
+  width: 80vw;
+  height: 90vh;
+}
+
+.radar-wrapper {
+  display: block;
+  margin: auto;
+  width: 80vw;
+  height: 90vh;
+}
