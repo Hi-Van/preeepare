@@ -6,6 +6,11 @@ import { Route, Link, Switch } from 'react-router-dom';
 import './App.css';
 
 function App() {
+
+  const onSubmit = () => {
+    console.log('Google Sheets URL Successfully Submitted!')
+  }
+
   return (
     <div className="App">
       <div className='header'>
@@ -79,9 +84,9 @@ function App() {
         </a>
       </div>
 
-      <form className="search">
+      <form className="search" onSubmit={onSubmit}>
         <input type="text" placeholder="Paste Sheets URL.." id="inputText" className="input" autocomplete="off" />
-        <button className='btn-submit'>Go!</button>
+        <button className='btn-submit' onSubmit={onSubmit}>Go!</button>
       </form>
 
       <h1 className='chart-opt'>I want to see my...</h1>
