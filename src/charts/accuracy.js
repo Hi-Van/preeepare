@@ -31,7 +31,7 @@ const data = {
 
 function Horizontal() {
     return (
-        <div className="horizontal-wrapper">
+        <div className="graph-wrapper">
             <HorizontalBar
                 data={data}
                 options={{ maintainAspectRatio: true, responsive: true }}

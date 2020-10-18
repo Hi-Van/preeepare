@@ -5,21 +5,21 @@ const data = {
     labels: ['Arrays & Strings', 'Searching & Sorting', 'Graphs & Trees', 'Stacks & Queues', 'Traversal Algorithms', 'Linked Lists', 'Dynamic Programming'],
     datasets: [
         {
-            label: 'My Topics',
+            label: 'My Questions',
             backgroundColor: 'rgba(255,99,132,0.2)',
             borderColor: 'rgba(255,99,132,1)',
             pointBackgroundColor: 'rgba(255,99,132,1)',
             pointBorderColor: '#fff',
             pointHoverBackgroundColor: '#fff',
             pointHoverBorderColor: 'rgba(255,99,132,1)',
-            data: [28, 48, 40, 19, 96, 27, 100]
+            data: [64, 67, 74, 72, 60, 81, 92]
         }
     ]
 };
 
 function RadarMap() {
     return (
-        <div className="radar-wrapper">
+        <div className="graph-wrapper">
             <Radar
                 data={data}
                 options={{ maintainAspectRatio: true, responsive: true }}

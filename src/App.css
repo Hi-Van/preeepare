@@ -1,4 +1,5 @@
 .App {
+  letter-spacing: 1px;
   text-align: center;
   overflow: hidden;
   background-color: #ffffff;
@@ -7,11 +8,45 @@
   margin: 0;
 }
 
+.emoji-logo-header {
+  font-family: "Raleway";
+  font-weight: 600;
+  font-size: 3vh;
+  color: #1a1a1a;
+}
+
 .emoji-logo {
   display: block;
-  margin-top: 6vh;
+  margin-top: 12vh;
   font-size: 10vh;
 }
+
+.twitter {
+  margin-left: 1vh;
+  font-family: "Raleway";
+  font-weight: 200;
+  font-size: 2vh;
+  color: #4d575c;
+}
+
+.header {
+  text-align: left;
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.header-text {
+  margin: 2vh 0vh 2vh 3vh;
+}
+
+.header-div {
+  border-top: 2px solid #e6e6e6;
+}
+
 a {
   text-decoration: none;
   cursor: pointer;
@@ -48,7 +83,7 @@ h2 {
 }
 
 .chart-opt {
-  margin-top: 30vh;
+  margin-top: 20vh;
 }
 
 .btn-layout {
@@ -66,25 +101,65 @@ h2 {
   font-size: 2vh;
   font-weight: 600;
   font-family: "Raleway";
-  letter-spacing: 1px;
   border-radius: 5px;
   color: #ffffff;
+}
+
+.btn-info {
+  margin: 4vh;
+  padding: 15px 40px 15px 40px;
+  background-color: #58b6e6;
+  font-size: 2vh;
+  font-weight: 600;
+  font-family: "Raleway";
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+.btn-info:hover {
+  background-color: #60bae7;
 }
 
 .btn-chart:hover {
   background-color: #ff7a7e;
 }
 
-.horizontal-wrapper {
+.graph-wrapper {
   display: block;
   margin: auto;
   width: 80vw;
   height: 90vh;
 }
 
-.radar-wrapper {
-  display: block;
-  margin: auto;
-  width: 80vw;
-  height: 90vh;
+.input {
+  margin: 2vh;
+  border: none;
+  outline: none;
+  font-size: 2vh;
+  font-family: "Raleway";
+  font-weight: 600;
+  background-color: #e3e3e3;
+  padding: 15px 40px 15px 40px;
+  color: #707070;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  margin: 2vh;
+  padding: 15px 20px 15px 20px;
+  background-color: #e3e3e3;
+  font-size: 2vh;
+  font-weight: 600;
+  font-family: "Raleway";
+  border-radius: 5px;
+  color: #707070;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  margin-top: 20vh;
+  margin-bottom: -15vh;
 }
