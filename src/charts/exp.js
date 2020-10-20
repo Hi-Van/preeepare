@@ -1,31 +1,31 @@
-
 import React, { Component } from 'react';
 import { HorizontalBar } from 'react-chartjs-2';
 
-class Horizontal extends Component {
+
+class HorizontalTwo extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            accuracyData: {
+            expData: {
                 labels: ['My Attempts'],
                 datasets: [
                     {
-                        label: 'Total Attempts',
-                        backgroundColor: 'rgba(92, 129, 204,0.2)',
-                        borderColor: 'rgba(92, 129, 204,1)',
-                        borderWidth: 1,
-                        data: [100]
-                    },
-                    {
-                        label: 'Correct',
+                        label: 'Easy',
                         backgroundColor: 'rgba(140, 204, 92,0.2)',
                         borderColor: 'rgba(140, 204, 92,1)',
                         borderWidth: 1,
                         data: [68]
                     },
                     {
-                        label: 'Incorrect',
+                        label: 'Medium',
+                        backgroundColor: 'rgba(219, 158, 72,0.2)',
+                        borderColor: 'rgba(219, 158, 72,1)',
+                        borderWidth: 1,
+                        data: [100]
+                    },
+                    {
+                        label: 'Hard',
                         backgroundColor: 'rgba(255,99,132,0.2)',
                         borderColor: 'rgba(255,99,132,1)',
                         borderWidth: 1,
@@ -36,12 +36,11 @@ class Horizontal extends Component {
         }
     }
 
-
     render() {
         return (
             <div className="graph-wrapper">
                 <HorizontalBar
-                    data={this.state.accuracyData}
+                    data={this.state.expData}
                     options={{ maintainAspectRatio: true, responsive: true }}
                 />
             </div>
@@ -49,4 +48,4 @@ class Horizontal extends Component {
     }
 }
 
-export default Horizontal;
+export default HorizontalTwo;
