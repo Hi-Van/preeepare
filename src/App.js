@@ -6,10 +6,6 @@ import { Route, Link, Switch } from 'react-router-dom';
 import { Link as SmoothLink } from 'react-scroll';
 import './App.css';
 
-const onSubmit = () => {
-  console.log('Google Sheets URL Successfully Submitted!')
-}
-
 class App extends Component {
 
   constructor(props) {
@@ -19,7 +15,7 @@ class App extends Component {
     }
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.getData();
   }
 
@@ -44,8 +40,12 @@ class App extends Component {
     });
   }
 
-
   render() {
+
+    const onClick = () => {
+      console.log('Google Sheets URl Submitted!');
+    }
+
     return (
       <div className="App">
         <div className='header'>
@@ -76,10 +76,10 @@ class App extends Component {
         </div>
 
 
-        <form className="search" onSubmit={onSubmit}>
-          <input type="text" placeholder="Paste Sheets URL.." id="inputText" className="input" autocomplete="off" />
-          <button className='btn-submit' onSubmit={onSubmit}>Go!</button>
-        </form>
+        <div className="search">
+          <input type="text" placeholder="Paste Sheets URL.." id="inputText" className="input" autoComplete="off" />
+          <button className='btn-submit' onClick={onClick}>Go!</button>
+        </div>
 
         <h1 className='chart-opt' id='graphs'>I want to see my...</h1>
 
