@@ -3,6 +3,7 @@ import RadarMap from './charts/topics';
 import Horizontal from './charts/accuracy';
 import HorizontalTwo from './charts/speed';
 import { Route, Link, Switch } from 'react-router-dom';
+import { Link as SmoothLink } from 'react-scroll';
 import './App.css';
 
 function App() {
@@ -32,7 +33,35 @@ function App() {
       <h1>Preeepare</h1>
       <h2>Visualize your progression</h2>
 
-      <h1 className='chart-opt'>I need more information...</h1>
+      <h1 className='chart-opt'>I am looking for...</h1>
+
+      <div className='btn-layout'>
+        <SmoothLink to="instructions" smooth={true} duration={1000}><button className='btn-nav'><span role="img" aria-label='papers'>📰</span> INSTRUCTIONS</button></SmoothLink>
+        <SmoothLink to="graphs" smooth={true} duration={1000}><button className='btn-nav'><span role="img" aria-label='laptop'>📈</span> VISUALIZATIONS</button></SmoothLink>
+        <SmoothLink to="info" smooth={true} duration={1000}><button className='btn-nav'><span role="img" aria-label='target'>💬</span> INFORMATION</button></SmoothLink>
+      </div>
+
+
+      <form className="search" onSubmit={onSubmit}>
+        <input type="text" placeholder="Paste Sheets URL.." id="inputText" className="input" autocomplete="off" />
+        <button className='btn-submit' onSubmit={onSubmit}>Go!</button>
+      </form>
+
+      <h1 className='chart-opt' id='graphs'>I want to see my...</h1>
+
+      <div className='btn-layout'>
+        <Link to='/topics'><button className='btn-chart'><span role="img" aria-label='books'>📚</span> TOPICS</button></Link>
+        <Link to='/accuracy'><button className='btn-chart'><span role="img" aria-label='target'>🎯</span> ACCURACY</button></Link>
+        <Link to='/work'><button className='btn-chart'><span role="img" aria-label='laptop'>🤵</span> EXPERIENCE</button></Link>
+      </div>
+
+      <Switch>
+        <Route path='/topics' exact component={RadarMap} />
+        <Route path='/accuracy' exact component={Horizontal} />
+        <Route path='/work' exact component={HorizontalTwo} />
+      </Switch>
+
+      <h1 className='chart-opt' id='info'>I need more information...</h1>
 
       <div className='btn-layout'>
         <a href='https://yangshun.github.io/tech-interview-handbook/' target='_blank' rel='noopener noreferrer'>
@@ -83,25 +112,6 @@ function App() {
           <button className='btn-info'><span role="img" aria-label='books'>🚀</span> FIND COURSES</button>
         </a>
       </div>
-
-      <form className="search" onSubmit={onSubmit}>
-        <input type="text" placeholder="Paste Sheets URL.." id="inputText" className="input" autocomplete="off" />
-        <button className='btn-submit' onSubmit={onSubmit}>Go!</button>
-      </form>
-
-      <h1 className='chart-opt'>I want to see my...</h1>
-
-      <div className='btn-layout'>
-        <Link to='/topics'><button className='btn-chart'><span role="img" aria-label='books'>📚</span> TOPICS</button></Link>
-        <Link to='/accuracy'><button className='btn-chart'><span role="img" aria-label='target'>🎯</span> ACCURACY</button></Link>
-        <Link to='/work'><button className='btn-chart'><span role="img" aria-label='laptop'>🤵</span> EXPERIENCE</button></Link>
-      </div>
-
-      <Switch>
-        <Route path='/topics' component={RadarMap} />
-        <Route path='/accuracy' component={Horizontal} />
-        <Route path='/work' component={HorizontalTwo} />
-      </Switch>
     </div>
   );
 }
