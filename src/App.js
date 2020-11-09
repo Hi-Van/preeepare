@@ -15,30 +15,34 @@ class App extends Component {
     }
   }
 
+  getData() {
+    //papa parse code here
+
+    this.setState({
+      importData: {
+        labels: ['Arrays & Strings', 'Searching & Sorting', 'Graphs & Trees', 'Stacks & Queues', 'Traversal Algorithms', 'Linked Lists', 'Dynamic Programming'],
+        datasets: [
+          {
+            label: 'My Questions',
+            backgroundColor: 'rgba(255,99,132,0.2)',
+            borderColor: 'rgba(255,99,132,1)',
+            pointBackgroundColor: 'rgba(255,99,132,1)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgba(255,99,132,1)',
+            data: [64, 67, 74, 72, 60, 81, 92]
+          }
+        ]
+      }
+    });
+  }
+
   render() {
 
     const handleSubmit = (evt) => {
       evt.preventDefault();
       let inputURL = document.getElementById('inputText').value;
       console.log(inputURL);
-
-      this.setState({
-        importData: {
-          labels: ['Arrays & Strings', 'Searching & Sorting', 'Graphs & Trees', 'Stacks & Queues', 'Traversal Algorithms', 'Linked Lists', 'Dynamic Programming'],
-          datasets: [
-            {
-              label: 'My Questions',
-              backgroundColor: 'rgba(255,99,132,0.2)',
-              borderColor: 'rgba(255,99,132,1)',
-              pointBackgroundColor: 'rgba(255,99,132,1)',
-              pointBorderColor: '#fff',
-              pointHoverBackgroundColor: '#fff',
-              pointHoverBorderColor: 'rgba(255,99,132,1)',
-              data: [64, 67, 74, 72, 60, 81, 92]
-            }
-          ]
-        }
-      });
     }
 
     return (
