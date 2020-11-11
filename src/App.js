@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import RadarMap from './charts/topics';
-import Horizontal from './charts/accuracy';
-import HorizontalTwo from './charts/exp';
+//import Horizontal from './charts/accuracy';
+//import HorizontalTwo from './charts/exp';
 import { Route, Link, Switch } from 'react-router-dom';
 import { Link as SmoothLink } from 'react-scroll';
 import './App.css';
@@ -10,7 +10,7 @@ function App() {
 
   const [topicsData, setTopicsData] = useState(
     {
-      labels: ['Arrays & Strings', 'Searching & Sorting', 'Graphs & Trees', 'Stacks & Queues', 'Traversal Algorithms', 'Linked Lists', 'Dynamic Programming'],
+      labels: ['example', 'example', 'example'],
       datasets: [
         {
           label: 'My Questions',
@@ -20,13 +20,13 @@ function App() {
           pointBorderColor: '#fff',
           pointHoverBackgroundColor: '#fff',
           pointHoverBorderColor: 'rgba(255,99,132,1)',
-          data: [64, 67, 74, 72, 60, 81, 92]
+          data: [1,2,3]
         }
       ]
     }
   );
 
-  const [expData, setexpData] = useState(
+  /*const [expData, setexpData] = useState(
     {
       labels: ['My Attempts'],
       datasets: [
@@ -67,14 +67,14 @@ function App() {
           data: [100]
         },
         {
-          label: 'Correct',
+          label: 'Solved',
           backgroundColor: 'rgba(140, 204, 92,0.2)',
           borderColor: 'rgba(140, 204, 92,1)',
           borderWidth: 1,
           data: [68]
         },
         {
-          label: 'Incorrect',
+          label: 'Unsolved',
           backgroundColor: 'rgba(255,99,132,0.2)',
           borderColor: 'rgba(255,99,132,1)',
           borderWidth: 1,
@@ -83,6 +83,13 @@ function App() {
       ]
     }
   );
+
+  <Link to='/accuracy'><button className='btn-chart'><span role="img" aria-label='target'>🎯</span> ACCURACY</button></Link>
+  <Link to='/work'><button className='btn-chart'><span role="img" aria-label='laptop'>🤵</span> EXPERIENCE</button></Link>
+  
+  <Route exact path='/accuracy' render={(props) => <Horizontal {...props} data={accuracyData} />} />
+  <Route exact path='/work' render={(props) => <HorizontalTwo {...props} data={expData} />} />
+  */
 
 
 
@@ -151,14 +158,10 @@ function App() {
 
       <div className='btn-layout'>
         <Link to='/topics'><button className='btn-chart'><span role="img" aria-label='books'>📚</span> TOPICS</button></Link>
-        <Link to='/accuracy'><button className='btn-chart'><span role="img" aria-label='target'>🎯</span> ACCURACY</button></Link>
-        <Link to='/work'><button className='btn-chart'><span role="img" aria-label='laptop'>🤵</span> EXPERIENCE</button></Link>
       </div>
 
       <Switch>
-        <Route exact path="/topics" render={(props) => <RadarMap {...props} data={topicsData} />} />
-        <Route exact path='/accuracy' render={(props) => <Horizontal {...props} data={accuracyData} />} />
-        <Route exact path='/work' render={(props) => <HorizontalTwo {...props} data={expData} />} />
+        <Route exact path="/topics" render={(props) => <RadarMap {...props} data={topicsData} /> } />
       </Switch>
 
       <h1 className='chart-opt' id='info'>I need more information...</h1>
