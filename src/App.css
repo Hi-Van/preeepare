@@ -146,35 +146,38 @@ h2 {
   height: 90vh;
 }
 
+
 .input {
-  margin: 2vh;
+  display: block;
+  cursor: context-menu;
+  margin: 20vh auto -15vh auto;
+  width: fit-content;
   border: none;
   outline: none;
   font-size: 2vh;
   font-family: "Raleway";
   font-weight: 600;
   background-color: #e3e3e3;
-  padding: 15px 40px 15px 40px;
+  padding: 15px 60px 15px 60px;
   color: #707070;
   border-radius: 5px;
 }
 
-.btn-submit {
-  margin: 2vh;
-  padding: 15px 20px 15px 20px;
-  background-color: #e3e3e3;
+.input:hover {
+  background-color: #dedede;
+}
+
+.go {
+  cursor: context-menu;
+  margin: 20vh 1vh -15vh 1vh;
+  width: fit-content;
+  border: none;
+  outline: none;
   font-size: 2vh;
-  font-weight: 600;
   font-family: "Raleway";
-  border-radius: 5px;
+  font-weight: 600;
+  background-color: #e3e3e3;
+  padding: 15px 20px 15px 20px;
   color: #707070;
-}
-
-.search {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  justify-items: center;
-  margin-top: 20vh;
-  margin-bottom: -15vh;
+  border-radius: 5px;
 }
