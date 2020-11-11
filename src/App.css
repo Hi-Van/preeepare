@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+.spacer {
+  height: 0vh;
+}
+
 .emoji-logo-header {
   font-family: "Raleway";
   font-weight: 600;
@@ -45,6 +49,15 @@
 
 .header-div {
   border-top: 2px solid #e6e6e6;
+}
+
+img {
+  width: 80vw;
+  max-width: 1000px;
+  height: auto;
+  margin-top: 2vh;;
+  margin-bottom: 10vh;
+  box-shadow: 0px 3px 25px rgba(0,0,0,0.2);
 }
 
 a {
@@ -150,7 +163,7 @@ h2 {
 .input {
   display: block;
   cursor: context-menu;
-  margin: 20vh auto -15vh auto;
+  margin: 20vh auto -5vh auto;
   width: fit-content;
   border: none;
   outline: none;
@@ -180,4 +193,14 @@ h2 {
   padding: 15px 20px 15px 20px;
   color: #707070;
   border-radius: 5px;
+}
+
+.refer-one {
+  color: #f57175;
+  font-weight: 600;
+}
+
+.refer-two {
+  color: #58b6e6;
+  font-weight: 600;
 }

@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import RadarMap from './charts/topics';
 //import Horizontal from './charts/accuracy';
 //import HorizontalTwo from './charts/exp';
+import dload from './download-csv.PNG';
+import csheet from './copy-sheet.PNG';
+import sgraph from './select-graph.PNG';
+import ddrop from './drag-drop.PNG';
 import { Route, Link, Switch } from 'react-router-dom';
 import { Link as SmoothLink } from 'react-scroll';
 import './App.css';
@@ -110,10 +114,6 @@ function App() {
     const titles = result[0]
     const vals = result[1]
 
-    for (let i = 0; i < titles.length; i++) {
-      console.log(titles[i], vals[i]);
-    }
-
     setTopicsData(topicsData => topicsData.labels = titles.slice(6), topicsData.datasets[0].data = vals.slice(6))
   }
 
@@ -146,15 +146,29 @@ function App() {
         <SmoothLink to="info" smooth={true} duration={1000}><button className='btn-nav'><span role="img" aria-label='target'>💬</span> INFORMATION</button></SmoothLink>
       </div>
 
+      <div className='spacer' id='instructions'/>
+      <h1 className='chart-opt'>Instructions...</h1>
+      <h2>1. <a className='refer-one' href='https://docs.google.com/spreadsheets/d/1h2cHK-IY5JrR5z3KY5GVl0QYzofaX6ZPeebfQx9pKG4/edit?usp=sharing' target='_blank' rel='nooopener noreferrer'>Copy</a> the provided template sheet</h2>
+      <img src={csheet} alt='download '/>
 
+      <h2>2. <a className='refer-two' href='https://youtu.be/ZL4XtwermIE' target='_blank' rel='nooopener noreferrer'>Download</a> sheet as CSV file</h2>
+      <img src={dload} alt='download '/>
+
+      <h2>3. Choose which graph you want to view</h2>
+      <img src={sgraph} alt='download ' />
+      
+      <h2>4. Drag and drop file into Preeepare</h2>
+      <img src={ddrop} alt='download ' />
+      
       <div
         className='input'
         onDragOver={(e) => { e.preventDefault(); }}
         onDrop={parse}
       >
         Drop File </div>
-
-      <h1 className='chart-opt' id='graphs'>I want to see my...</h1>
+      
+      <div className='spacer' id='graphs'/>
+      <h1 className='chart-opt'>I want to see my...</h1>
 
       <div className='btn-layout'>
         <Link to='/topics'><button className='btn-chart'><span role="img" aria-label='books'>📚</span> TOPICS</button></Link>
