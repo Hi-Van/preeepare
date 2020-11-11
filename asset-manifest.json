@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/preeepare/static/css/main.657e95cc.chunk.css",
-    "main.js": "/preeepare/static/js/main.3bd24100.chunk.js",
-    "main.js.map": "/preeepare/static/js/main.3bd24100.chunk.js.map",
-    "runtime-main.js": "/preeepare/static/js/runtime-main.2c060ef1.js",
-    "runtime-main.js.map": "/preeepare/static/js/runtime-main.2c060ef1.js.map",
-    "static/js/2.1058e000.chunk.js": "/preeepare/static/js/2.1058e000.chunk.js",
-    "static/js/2.1058e000.chunk.js.map": "/preeepare/static/js/2.1058e000.chunk.js.map",
+    "main.css": "/preeepare/static/css/main.2e7773dd.chunk.css",
+    "main.js": "/preeepare/static/js/main.4c49c837.chunk.js",
+    "main.js.map": "/preeepare/static/js/main.4c49c837.chunk.js.map",
+    "runtime-main.js": "/preeepare/static/js/runtime-main.f2cdc9c3.js",
+    "runtime-main.js.map": "/preeepare/static/js/runtime-main.f2cdc9c3.js.map",
+    "static/js/2.588a85e4.chunk.js": "/preeepare/static/js/2.588a85e4.chunk.js",
+    "static/js/2.588a85e4.chunk.js.map": "/preeepare/static/js/2.588a85e4.chunk.js.map",
     "index.html": "/preeepare/index.html",
-    "precache-manifest.ec274f75e1baa43e87f3073e60bf0a6e.js": "/preeepare/precache-manifest.ec274f75e1baa43e87f3073e60bf0a6e.js",
-    "service-worker.js": "/preeepare/service-worker.js",
-    "static/css/main.657e95cc.chunk.css.map": "/preeepare/static/css/main.657e95cc.chunk.css.map",
-    "static/js/2.1058e000.chunk.js.LICENSE.txt": "/preeepare/static/js/2.1058e000.chunk.js.LICENSE.txt"
+    "static/css/main.2e7773dd.chunk.css.map": "/preeepare/static/css/main.2e7773dd.chunk.css.map",
+    "static/js/2.588a85e4.chunk.js.LICENSE.txt": "/preeepare/static/js/2.588a85e4.chunk.js.LICENSE.txt",
+    "static/media/copy-sheet.3eb071c7.PNG": "/preeepare/static/media/copy-sheet.3eb071c7.PNG",
+    "static/media/download-csv.059e807a.PNG": "/preeepare/static/media/download-csv.059e807a.PNG",
+    "static/media/drag-drop.459c56d7.PNG": "/preeepare/static/media/drag-drop.459c56d7.PNG",
+    "static/media/select-graph.2a7855c1.PNG": "/preeepare/static/media/select-graph.2a7855c1.PNG"
   },
   "entrypoints": [
-    "static/js/runtime-main.2c060ef1.js",
-    "static/js/2.1058e000.chunk.js",
-    "static/css/main.657e95cc.chunk.css",
-    "static/js/main.3bd24100.chunk.js"
+    "static/js/runtime-main.f2cdc9c3.js",
+    "static/js/2.588a85e4.chunk.js",
+    "static/css/main.2e7773dd.chunk.css",
+    "static/js/main.4c49c837.chunk.js"
   ]
 }
