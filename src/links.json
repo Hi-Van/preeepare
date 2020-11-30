@@ -1,0 +1,62 @@
+[
+    {
+        "title": "🧾 TECH INTERVIEW HANDBOOK",
+        "type": "interview preparation handbook",
+        "link": "https://yangshun.github.io/tech-interview-handbook/"
+    },
+    {
+        "title": "🎭 FRONTEND INTERVIEW HANDBOOK",
+        "type": "interview preparation handbook",
+        "link": "https://yangshun.github.io/front-end-interview-handbook/"
+    },
+    {
+        "title": "🔧 GROKKING THE CODING INTERVIEW",
+        "type": "interview preparation course",
+        "link": "https://www.educative.io/courses/grokking-the-coding-interview"
+    },
+    {
+        "title": "💼 CRACKING THE CODING INTERVIEW",
+        "type": "interview preparation book",
+        "link": "https://www.amazon.com/Cracking-Coding-Interview-Programming-Questions/dp/0984782850"
+    },
+    {
+        "title": "💻 GROKKING THE SYSTEM INTERVIEW",
+        "type": "system design course",
+        "link": "https://www.educative.io/courses/grokking-the-system-design-interview"
+    },
+    {
+        "title": "📙 DESIGNING DATA INTENSIVE APPLICATIONS",
+        "type": "system design book",
+        "link": "https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321"
+    },
+    {
+        "title": "🚘 DEVELOPER ROADMAPS",
+        "type": "resource",
+        "link": "https://roadmap.sh/"
+    },
+    {
+        "title": "🎓 GITHUB EDUCATION",
+        "type": "resource",
+        "link": "https://education.github.com/"
+    },
+    {
+        "title": "🤝 PRACTICE INTERVIEWS",
+        "type": "practice mock interview",
+        "link": "https://interviewing.io/"
+    },
+    {
+        "title": "✍ PRACTICE QUESTIONS",
+        "type": "practice",
+        "link": "https://leetcode.com/"
+    },
+    {
+        "title": "🙋‍♂️ FIND INTERNSHIPS",
+        "type": "find internship",
+        "link": "https://github.com/Pitt-CSC/Summer2021-Internships"
+    },
+    {
+        "title": "🚀 FIND COURSES",
+        "type": "find course",
+        "link": "https://www.udemy.com/"
+    }
+]

@@ -8,10 +8,6 @@
   margin: 0;
 }
 
-.spacer {
-  height: 0vh;
-}
-
 .emoji-logo-header {
   font-family: "Raleway";
   font-weight: 600;
@@ -55,9 +51,9 @@ img {
   width: 80vw;
   max-width: 1000px;
   height: auto;
-  margin-top: 2vh;;
+  margin-top: 2vh;
   margin-bottom: 10vh;
-  box-shadow: 0px 3px 25px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 25px rgba(0, 0, 0, 0.2);
 }
 
 a {
@@ -159,7 +155,6 @@ h2 {
   height: 90vh;
 }
 
-
 .input {
   display: block;
   cursor: context-menu;
@@ -180,19 +175,43 @@ h2 {
   background-color: #dedede;
 }
 
-.go {
-  cursor: context-menu;
-  margin: 20vh 1vh -15vh 1vh;
+.search {
+  margin: 2em 1em 2em 1em;
   width: fit-content;
   border: none;
   outline: none;
-  font-size: 2vh;
+  font-size: 1.75vh;
+  font-family: "Raleway";
+  font-weight: 600;
+  background-color: #e3e3e3;
+  padding: 15px 25px 15px 25px;
+  color: #707070;
+  border-radius: 5px;
+}
+
+.search:hover {
+  background-color: #dedede;
+}
+
+.search-btn {
+  margin: 2em 2em 2em 1em;
+  cursor: pointer;
+  width: fit-content;
+  border: none;
+  outline: none;
+  font-size: 1.75vh;
   font-family: "Raleway";
   font-weight: 600;
   background-color: #e3e3e3;
   padding: 15px 20px 15px 20px;
   color: #707070;
   border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.search-btn:hover {
+  background-color: #dedede;
+  transform: translateY(-3px);
 }
 
 .refer-one {
@@ -203,4 +222,11 @@ h2 {
 .refer-two {
   color: #58b6e6;
   font-weight: 600;
+}
+
+.search-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
 }
